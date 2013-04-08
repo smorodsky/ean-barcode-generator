@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macromedia-extension
+	name="EAN Barcode Generator"
+	version="1.0.0"
+	type="Command">
+
+	<!-- Describe the author -->
+	
+	<author name="Konstantin Smorodsky" />
+
+	<!-- License -->
+	
+	<license-agreement><![CDATA[Copyright (с) 2013 Konstantin Smorodsky.<br><br>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br><br>
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br><br>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+]]></license-agreement>
+
+	<!-- List the required/compatible products -->
+	
+	<products>
+		<product name="InDesign" version="6"   primary="true" /> 
+		<product name="InDesign" version="7"   primary="true" /> 
+		<product name="InDesign" version="7.5" primary="true" /> 
+		<product name="InDesign" version="8"   primary="true" /> 
+	</products> 
+
+	<!-- Describe the extension -->
+	
+	<description>
+		<![CDATA[Make EAN-8 & EAN-13 barcodes.]]></description>
+	
+	<!-- Describe where the extension shows in the UI of the product -->
+
+	<ui-access>
+	<![CDATA[Open palette Scripts (menu Window->Utilities->Scripts) doubleclick item EAN_Barcode_Generator.jsx. Choice type of barcode. Next, input the desired number of digits and click OK.]]>
+	</ui-access>
+
+	<!-- Describe the files that comprise the extension -->
+	
+	<files>
+		<file name="EAN_Barcode_Generator.jsx"    
+			destination="$installfolder/Scripts/Scripts Panel" />	</files>
+	
+	<!-- Provides update information for this extension -->
+	
+	<update url="http://raw.github.com/smorodsky/ean-barcode-generator/master/updates/update.xml" />
+	
+</macromedia-extension>
