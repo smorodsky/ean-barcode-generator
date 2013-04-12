@@ -6,6 +6,9 @@ Make EAN-8 & EAN-13 barcodes.
 
 Open palette Scripts (menu Window->Utilities->Scripts) doubleclick item EAN_Barcode_Generator.jsx. Choice type of barcode. Next, input the desired number of digits and click OK.
 
+Discussion
+http://github.com/smorodsky/ean-barcode-generator/issues
+
 
 Installation
 

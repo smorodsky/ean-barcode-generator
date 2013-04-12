@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <macromedia-extension
 	name="EAN Barcode Generator"
-	version="1.0.0"
+	version="1.0.1"
 	type="Command">
 
 	<!-- Describe the author -->
