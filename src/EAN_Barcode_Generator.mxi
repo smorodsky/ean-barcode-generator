@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <macromedia-extension
 	name="EAN Barcode Generator"
-	version="1.0.1"
+	version="1.0.3"
 	type="Command">
 
 	<!-- Describe the author -->
@@ -19,11 +19,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<!-- List the required/compatible products -->
 	
 	<products>
-		<product name="InDesign" version="6"   primary="true" /> 
-		<product name="InDesign" version="7"   primary="true" /> 
-		<product name="InDesign" version="7.5" primary="true" /> 
-		<product name="InDesign" version="8"   primary="true" /> 
-	</products> 
+    	<product version="6.0" primary="true" name="InDesign"/>
+    	<product version="7.0" primary="true" name="InDesign"/>
+    	<product version="7.5" primary="true" name="InDesign"/>
+    	<product version="8.0" primary="true" name="InDesign"/>
+    	<product version="8.0" primary="true" name="InDesign32"/>
+    	<product version="8.0" primary="true" name="InDesign64"/>
+  	</products>
+  
 
 	<!-- Describe the extension -->
 	
@@ -33,14 +36,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<!-- Describe where the extension shows in the UI of the product -->
 
 	<ui-access>
-	<![CDATA[Open palette Scripts (menu Window->Utilities->Scripts) doubleclick item EAN_Barcode_Generator.jsx. Choice type of barcode. Next, input the desired number of digits and click OK.]]>
+	<![CDATA[Open palette Scripts (menu Window->Utilities->Scripts) doubleclick item EAN_Barcode_Generator.jsx. Input the desired digits and click OK.]]>
 	</ui-access>
 
 	<!-- Describe the files that comprise the extension -->
 	
 	<files>
-		<file name="EAN_Barcode_Generator.jsx"    
-			destination="$installfolder/Scripts/Scripts Panel" />	</files>
+    	<file source="EAN_Barcode_Generator.jsx" 
+    	destination="$indesign/Scripts/Scripts Panel"
+    	products="InDesign,InDesign,InDesign32,InDesign64" />
+    </files>
 	
 	<!-- Provides update information for this extension -->
 	
