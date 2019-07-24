@@ -2,19 +2,24 @@ EAN Barcode Generator
 
 Script for Adobe Indesign CS4+
 
-Make EAN-8 & EAN-13 barcodes.
-
-Open Scripts palette (menu Window->Utilities->Scripts) doubleclick item EAN_Barcode_Generator.jsx. Type the desired number of digits and click OK.
-
-Discussion
-http://github.com/smorodsky/ean-barcode-generator/issues
+Make EAN-8 & EAN-13 barcodes directly within InDesign.
 
 
 Installation
 
-Download the file EAN_Barcode_Generator.zxp and double-click it. Follow the instructions of Adobe Extension Manager.
+Download script https://raw.githubusercontent.com/smorodsky/ean-barcode-generator/master/src/EAN_Barcode_Generator.jsx
+Copy file to:
+
+InDesign for Mac:
+/Users/{{YOU_USER_NAME}}/Library/Preferences/Adobe InDesign/Version X.X/en_US/Scripts/Scripts Panel
+
+InDesign for Windows 7 and later:
+C:\Users\{{YOU_USER_NAME}}\AppData\Local\Adobe\InDesign\Version X.X\en_US\Scripts\Scripts Panel
+
+InDesign for Windows XP:
+C:\Documents and Settings\{{YOU_USER_NAME}}\Application Data\Adobe\InDesign\Version X.X\en_US\Scripts\Scripts Panel
 
 
-Uninstall
+Use
 
-Run Adobe Extension Manager. Find the item "EAN Barcode Generator" in the list and click "Remove" button.
+Open Scripts palette (menu Window->Utilities->Scripts) doubleclick item EAN_Barcode_Generator.jsx. Type the desired number of digits and click OK.
